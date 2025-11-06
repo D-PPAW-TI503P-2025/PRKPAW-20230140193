@@ -2,7 +2,7 @@
 
 **Nama:** Hikmatyar Alghifary  
 **NIM:** 20230140193  
-**Mata Kuliah:** Teknologi Server
+**Mata Kuliah:** Pengembangan Aplikasi Web
 
 ## 🖼️ Dokumentasi Uji Coba
 
