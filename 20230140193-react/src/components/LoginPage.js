@@ -13,7 +13,7 @@ function LoginPage() {
     setError(null);
 
     try {
-      const response = await axios.post("http://localhost:3001/api/authRoutes/login", {
+      const response = await axios.post("http://localhost:3001/api/auth/login", {
         email: email,
         password: password,
       });
