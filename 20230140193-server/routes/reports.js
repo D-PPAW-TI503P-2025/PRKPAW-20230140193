@@ -1,10 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const presensiController = require('../controllers/presensiController');
-const { authenticateToken } = require('../middleware/permissionMiddleware');
-router.use(authenticateToken);
-router.post('/check-in', presensiController.CheckIn);
-router.post('/check-out', presensiController.CheckOut);
-router.put('/:id', presensiController.updatePresensi);
-router.delete('/:id', presensiController.deletePresensi);
-module.exports = router;
+ 	const reportController = require('../controllers/reportController');
+ 	const { authenticateToken, isAdmin } = require('../middleware/permissionMiddleware');
+ 	router.get('/daily', [authenticateToken, isAdmin], reportController.getDailyReport);
+ 	module.exports = router;
