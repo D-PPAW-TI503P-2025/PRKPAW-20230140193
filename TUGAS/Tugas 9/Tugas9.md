@@ -12,9 +12,9 @@
 |----|--------------|------------|
 | 1 | Endpoint Check-In | ![in](./ss/in.jpeg) |
 | 2 | Endpoint Check-Out | ![out](./ss/out.jpeg) |
-| 3 | Halaman Report Presensi | ![Report](./ss/Report.jpeg) |
-| 4 | Tampilan Check-In | ![Check-In](./ss/Check-in.jpeg) |
-| 5 | Tampilan Check-Out | ![Check-Out](./ss/Check-out.jpeg) |
+| 3 | Tampilan Check-In | ![Check-In](./ss/Check-in.jpeg) |
+| 4 | Tampilan Check-Out | ![Check-Out](./ss/Check-out.jpeg) |
+| 5 | Halaman Report Presensi | ![Report](./ss/Report.jpeg) |
 | 6 | Database Presensi | ![Database](./ss/Database.jpeg) |
 
 ---
