@@ -10,7 +10,7 @@
 
 | No | Nama Halaman | Screenshot |
 |----|--------------|------------|
-| 1 | Endpoint Check-In | ![Endpoint Check-In](./ss/EndpointCheck-In.jpeg) |
+| 1 | Endpoint Check-In | ![in](./ss/in.jpeg) |
 | 2 | Endpoint Check-Out | ![out](./ss/out.jpeg) |
 | 3 | Halaman Report Presensi | ![Report](./ss/Report.jpeg) |
 | 4 | Tampilan Check-In | ![Check-In](./ss/Check-in.jpeg) |
