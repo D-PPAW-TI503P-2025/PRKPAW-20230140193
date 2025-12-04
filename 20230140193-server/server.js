@@ -9,6 +9,8 @@ const presensiRoutes = require("./routes/presensi");
 const reportRoutes = require("./routes/reports");
 
 const authRoutes = require("./routes/auth");
+//tambahan
+const path = require('path'); 
 
 // Middleware
 app.use(cors());
@@ -29,3 +31,5 @@ app.use("/api/auth", authRoutes);
 app.listen(PORT, () => {
   console.log(`Express server running at http://localhost:${PORT}/`);
 });
+//tambahan
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
