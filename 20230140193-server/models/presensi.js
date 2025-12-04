@@ -3,41 +3,48 @@ const { Model } = require('sequelize');
 
 module.exports = (sequelize, DataTypes) => {
   class Presensi extends Model {
-
     static associate(models) {
-        Presensi.belongsTo(models.User, {
-        foreignKey: 'userId', 
-        as: 'user' 
+      Presensi.belongsTo(models.User, {
+        foreignKey: 'userId',
+        as: 'user'
       });
     }
-
   }
 
-  Presensi.init({
-    userId: {
-      type: DataTypes.INTEGER,
-      allowNull: false
-    },
-    checkIn: {
-      type: DataTypes.DATE,
-      allowNull: false
-    },
-    checkOut: {
-      type: DataTypes.DATE,
-      allowNull: true
-    },
-    latitude: {
+  Presensi.init(
+    {
+      userId: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+      },
+      checkIn: {
+        type: DataTypes.DATE,
+        allowNull: false,
+      },
+      checkOut: {
+        type: DataTypes.DATE,
+        allowNull: true,
+      },
+      latitude: {
         type: DataTypes.DECIMAL(10, 7),
         allowNull: false,
+      },
+      longitude: {
+        type: DataTypes.DECIMAL(10, 7),
+        allowNull: false,
+      },
+
+      // 🔥 WAJIB ADA (Karena sudah ada di database)
+      buktiFoto: {
+        type: DataTypes.STRING,
+        allowNull: true,
+      },
     },
-    longitude: {
-      type: DataTypes.DECIMAL(10, 7),
-      allowNull: false,
-    },
-  }, {
-    sequelize,
-    modelName: 'Presensi',
-  });
+    {
+      sequelize,
+      modelName: 'Presensi',
+    }
+  );
 
   return Presensi;
 };
