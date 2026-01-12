@@ -70,6 +70,17 @@ function Navbar() {
               Presensi
             </Link>
 
+            {/* --- TAMBAHAN MENU DESKTOP --- */}
+            <Link
+              to="/monitoring"
+              className={`px-6 py-2.5 rounded-full font-medium transition-all ${
+                isActive("/monitoring") ? activeClass : inactiveClass
+              }`}
+            >
+              Monitoring Suhu
+            </Link>
+            {/* ----------------------------- */}
+
             {user.role === "admin" && (
               <Link
                 to="/reports"
@@ -147,6 +158,19 @@ function Navbar() {
             >
               Presensi
             </Link>
+
+            {/* --- TAMBAHAN MENU MOBILE --- */}
+            <Link
+              to="/monitoring"
+              onClick={() => setMobileMenuOpen(false)}
+              className={`block px-6 py-3 rounded-full font-medium ${
+                isActive("/monitoring") ? activeClass : "text-gray-700"
+              }`}
+            >
+              Monitoring Suhu
+            </Link>
+            {/* ---------------------------- */}
+
             {user.role === "admin" && (
               <Link
                 to="/reports"
@@ -174,5 +198,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-

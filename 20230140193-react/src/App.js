@@ -8,6 +8,7 @@ import DashboardPage from "./components/DashboardPage";
 import Navbar from "./components/Navbar"; 
 import PresensiPage from "./components/PresensiPage"; 
 import ReportPage from "./components/ReportPage"; 
+import SensorPage from "./components/SensorPage"; 
 
 
 const LayoutWithNavbar = ({ element: Element }) => (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/dashboard" element={<LayoutWithNavbar element={DashboardPage} />} />
         <Route path="/presensi" element={<LayoutWithNavbar element={PresensiPage} />} />
         <Route path="/reports" element={<LayoutWithNavbar element={ReportPage} />} />
+        <Route path="/monitoring" element={<LayoutWithNavbar element={SensorPage} />} />
         
       </Routes>
     </Router>
